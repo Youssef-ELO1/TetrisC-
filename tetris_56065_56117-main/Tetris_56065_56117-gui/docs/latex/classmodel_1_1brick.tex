@@ -1,0 +1,137 @@
+\doxysection{model\+::brick Class Reference}
+\hypertarget{classmodel_1_1brick}{}\label{classmodel_1_1brick}\index{model::brick@{model::brick}}
+Inheritance diagram for model\+::brick\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=1.649485cm]{classmodel_1_1brick}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classmodel_1_1brick_a37315447da7e0cf8899a8562bf5efa78}{brick}} ()
+\begin{DoxyCompactList}\small\item\em Constructeur de la classe brick. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classmodel_1_1brick_a72b6226443aca6cf1de1375a33bab740}{draw}} ()
+\begin{DoxyCompactList}\small\item\em Méthode pour dessiner la brique. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classmodel_1_1brick_aa6228c61ac274279ea7a2b8ca6dfb584}{move}} (int rows, int column)
+\begin{DoxyCompactList}\small\item\em Méthode pour déplacer la brique. \end{DoxyCompactList}\item 
+std\+::vector$<$ \mbox{\hyperlink{classmodel_1_1position}{position}} $>$ \mbox{\hyperlink{classmodel_1_1brick_ae833348bcebdd591142e045f865ac539}{get\+Position}} ()
+\begin{DoxyCompactList}\small\item\em Méthode pour obtenir les positions des cases de la brique. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classmodel_1_1brick_a94355ff9198189cfd396a8d9adcde9d1}{rotate}} ()
+\begin{DoxyCompactList}\small\item\em Méthode pour faire tourner la brique dans le sens horaire. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classmodel_1_1brick_ab4377e34aac4404772a8f3617276f273}{undo\+Rotate}} ()
+\begin{DoxyCompactList}\small\item\em Méthode pour annuler la rotation de la brique. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classmodel_1_1brick_a242453364d072301760b1a68440c7b77}\label{classmodel_1_1brick_a242453364d072301760b1a68440c7b77} 
+bool {\bfseries active} = true
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classmodel_1_1brick_a6d8d9a6b2f6e28620ffab501272e5fbd}\label{classmodel_1_1brick_a6d8d9a6b2f6e28620ffab501272e5fbd} 
+int {\bfseries rotation}
+\item 
+\Hypertarget{classmodel_1_1brick_ac00f0a699090f33bb8d13a39c8907d22}\label{classmodel_1_1brick_ac00f0a699090f33bb8d13a39c8907d22} 
+int {\bfseries row\+Offset}
+\item 
+\Hypertarget{classmodel_1_1brick_a5e136aa5e8b9ab6c6563eeed4abb26a1}\label{classmodel_1_1brick_a5e136aa5e8b9ab6c6563eeed4abb26a1} 
+int {\bfseries colum\+Offset}
+\item 
+\Hypertarget{classmodel_1_1brick_a74bee3b2998ee2f5ebac18f09305bf19}\label{classmodel_1_1brick_a74bee3b2998ee2f5ebac18f09305bf19} 
+int {\bfseries cols}
+\item 
+\Hypertarget{classmodel_1_1brick_a7583e9e4d371b2fbe8254fdbb06740a4}\label{classmodel_1_1brick_a7583e9e4d371b2fbe8254fdbb06740a4} 
+int {\bfseries id}
+\item 
+\Hypertarget{classmodel_1_1brick_a8aee098c9979b20f68e1b4bcf24621d5}\label{classmodel_1_1brick_a8aee098c9979b20f68e1b4bcf24621d5} 
+char {\bfseries fill\+Char}
+\item 
+\Hypertarget{classmodel_1_1brick_ab2abe732357173eaf7cd636654706c7e}\label{classmodel_1_1brick_ab2abe732357173eaf7cd636654706c7e} 
+std\+::map$<$ int, std\+::vector$<$ \mbox{\hyperlink{classmodel_1_1position}{position}} $>$ $>$ {\bfseries cases}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classmodel_1_1brick_a37315447da7e0cf8899a8562bf5efa78}\label{classmodel_1_1brick_a37315447da7e0cf8899a8562bf5efa78} 
+\index{model::brick@{model::brick}!brick@{brick}}
+\index{brick@{brick}!model::brick@{model::brick}}
+\doxysubsubsection{\texorpdfstring{brick()}{brick()}}
+{\footnotesize\ttfamily model\+::brick\+::brick (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Constructeur de la classe brick. 
+
+Initialise les attributs de la brique. 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classmodel_1_1brick_a72b6226443aca6cf1de1375a33bab740}\label{classmodel_1_1brick_a72b6226443aca6cf1de1375a33bab740} 
+\index{model::brick@{model::brick}!draw@{draw}}
+\index{draw@{draw}!model::brick@{model::brick}}
+\doxysubsubsection{\texorpdfstring{draw()}{draw()}}
+{\footnotesize\ttfamily void model\+::brick\+::draw (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Méthode pour dessiner la brique. 
+
+Affiche le caractère de remplissage de la brique sur la sortie standard. \Hypertarget{classmodel_1_1brick_ae833348bcebdd591142e045f865ac539}\label{classmodel_1_1brick_ae833348bcebdd591142e045f865ac539} 
+\index{model::brick@{model::brick}!getPosition@{getPosition}}
+\index{getPosition@{getPosition}!model::brick@{model::brick}}
+\doxysubsubsection{\texorpdfstring{getPosition()}{getPosition()}}
+{\footnotesize\ttfamily vector$<$ \mbox{\hyperlink{classmodel_1_1position}{position}} $>$ model\+::brick\+::get\+Position (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Méthode pour obtenir les positions des cases de la brique. 
+
+\begin{DoxyReturn}{Returns}
+Un vecteur contenant les positions des cases de la brique après avoir appliqué les décalages. 
+\end{DoxyReturn}
+\Hypertarget{classmodel_1_1brick_aa6228c61ac274279ea7a2b8ca6dfb584}\label{classmodel_1_1brick_aa6228c61ac274279ea7a2b8ca6dfb584} 
+\index{model::brick@{model::brick}!move@{move}}
+\index{move@{move}!model::brick@{model::brick}}
+\doxysubsubsection{\texorpdfstring{move()}{move()}}
+{\footnotesize\ttfamily void model\+::brick\+::move (\begin{DoxyParamCaption}\item[{int}]{rows,  }\item[{int}]{columns }\end{DoxyParamCaption})}
+
+
+
+Méthode pour déplacer la brique. 
+
+Cette méthode déplace la brique selon le nombre de lignes et de colonnes spécifié.
+
+
+\begin{DoxyParams}{Parameters}
+{\em rows} & Le nombre de lignes à déplacer. \\
+\hline
+{\em columns} & Le nombre de colonnes à déplacer. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{classmodel_1_1brick_a94355ff9198189cfd396a8d9adcde9d1}\label{classmodel_1_1brick_a94355ff9198189cfd396a8d9adcde9d1} 
+\index{model::brick@{model::brick}!rotate@{rotate}}
+\index{rotate@{rotate}!model::brick@{model::brick}}
+\doxysubsubsection{\texorpdfstring{rotate()}{rotate()}}
+{\footnotesize\ttfamily void model\+::brick\+::rotate (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Méthode pour faire tourner la brique dans le sens horaire. 
+
+Incrémente la rotation de la brique. Si la rotation dépasse le nombre de cas possibles, elle revient au premier cas. \Hypertarget{classmodel_1_1brick_ab4377e34aac4404772a8f3617276f273}\label{classmodel_1_1brick_ab4377e34aac4404772a8f3617276f273} 
+\index{model::brick@{model::brick}!undoRotate@{undoRotate}}
+\index{undoRotate@{undoRotate}!model::brick@{model::brick}}
+\doxysubsubsection{\texorpdfstring{undoRotate()}{undoRotate()}}
+{\footnotesize\ttfamily void model\+::brick\+::undo\+Rotate (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Méthode pour annuler la rotation de la brique. 
+
+Décrémente la rotation de la brique. Si la rotation devient inférieure à zéro, elle revient au dernier cas possible. 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+brick.\+h\item 
+\mbox{\hyperlink{brick_8cpp}{brick.\+cpp}}\end{DoxyCompactItemize}

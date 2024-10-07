@@ -1,0 +1,59 @@
+\doxysection{Board.\+h}
+\hypertarget{_board_8h_source}{}\label{_board_8h_source}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#ifndef\ BOARD\_H}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#define\ BOARD\_H}}
+\DoxyCodeLine{00003\ }
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ "{}position.h"{}}}
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#include\ "{}brick.h"{}}}
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#include\ "{}brickFactory.h"{}}}
+\DoxyCodeLine{00007\ \textcolor{preprocessor}{\#include\ <QPainter>}}
+\DoxyCodeLine{00008\ }
+\DoxyCodeLine{00009\ \textcolor{keyword}{namespace\ }model\ \{}
+\DoxyCodeLine{00010\ }
+\DoxyCodeLine{00014\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classmodel_1_1_board}{Board}}\{}
+\DoxyCodeLine{00015\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00016\ \ \ \ \ \textcolor{comment}{//\ Attributs\ privés}}
+\DoxyCodeLine{00017\ \ \ \ \ \mbox{\hyperlink{classmodel_1_1brick_factory}{brickFactory}}\ brickFormation;\ \textcolor{comment}{//game\ (à\ voir\ par\ rapport\ au\ currentBrick)}}
+\DoxyCodeLine{00018\ \ \ \ \ std::vector<std::vector<int>>\ board;}
+\DoxyCodeLine{00019\ }
+\DoxyCodeLine{00020\ \ \ \ \ \textcolor{keywordtype}{int}\ cellSize;}
+\DoxyCodeLine{00021\ \ \ \ \ \mbox{\hyperlink{classmodel_1_1brick}{brick}}*\ currentBrick;}
+\DoxyCodeLine{00022\ }
+\DoxyCodeLine{00023\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00024\ \ \ \ \ \textcolor{comment}{//\ Constructeurs}}
+\DoxyCodeLine{00025\ \ \ \ \ \textcolor{keyword}{explicit}\ \mbox{\hyperlink{classmodel_1_1_board_acd7355a51c90bbb5bce957abd718ad67}{Board}}();}
+\DoxyCodeLine{00026\ \ \ \ \ \mbox{\hyperlink{classmodel_1_1_board_acd7355a51c90bbb5bce957abd718ad67}{Board}}(\textcolor{keywordtype}{int}\ row,\ \textcolor{keywordtype}{int}\ col);}
+\DoxyCodeLine{00027\ \ \ \ \ \textcolor{keywordtype}{int}\ rowsNum;}
+\DoxyCodeLine{00028\ \ \ \ \ \textcolor{keywordtype}{int}\ colsNum;}
+\DoxyCodeLine{00029\ \ \ \ \ \textcolor{comment}{//\ Méthodes\ publiques}}
+\DoxyCodeLine{00030\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classmodel_1_1_board_ad53d4b63e2e4bb412e84837d33eebfd6}{initialise}}();}
+\DoxyCodeLine{00031\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{classmodel_1_1_board_a6290e55741182e93d1a7a75f7ee37732}{isCasesOut}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{classmodel_1_1position}{position}}\ \&\ pos);}
+\DoxyCodeLine{00032\ \ \ \ \ \mbox{\hyperlink{classmodel_1_1brick}{brick}}*\ \mbox{\hyperlink{classmodel_1_1_board_a17a6aa5b2835c0ba8c49005d3503ccf4}{getRandomBrick}}()\ \textcolor{keyword}{const};\ \textcolor{comment}{//game\ mais\ pas\ encore\ sûr}}
+\DoxyCodeLine{00033\ \ \ \ \ \mbox{\hyperlink{classmodel_1_1brick}{brick}}*\ \mbox{\hyperlink{classmodel_1_1_board_a075bde4f05ed556ff88e630ce88497d1}{getCurrentBrick}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00034\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classmodel_1_1_board_aa1a75c03d5e838c0c8152ba368952359}{setNewRandomCurrentBrick}}();}
+\DoxyCodeLine{00035\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classmodel_1_1_board_a2a42d936fdfc9410dc905cb4dd70833a}{setLockedBrick}}();\ \textcolor{comment}{//game\ mais\ pas\ encore\ sûr}}
+\DoxyCodeLine{00036\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{classmodel_1_1_board_aebcf8c8756d78140a03a0a4ecca6f56d}{isCasesEmpty}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{classmodel_1_1position}{position}}\ \&\ pos);}
+\DoxyCodeLine{00037\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{classmodel_1_1_board_aa288e832f36dd8298d228fe9d3fa1772}{isPosBrickEmpty}}();}
+\DoxyCodeLine{00038\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{classmodel_1_1_board_a57186abe5e76d8b5c315b45a39235312}{getRowsNum}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00039\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{classmodel_1_1_board_add94355703e2c42185e2af1178815b9e}{getColsNum}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00040\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{classmodel_1_1_board_aa142e05decb4634d5046307a2df6dd65}{getBoardValue}}(\textcolor{keywordtype}{int}\ row,\ \textcolor{keywordtype}{int}\ column)\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00041\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{classmodel_1_1_board_a36d19c2165cf4ddcfc7ad0f122fa6010}{isBrickOut}}();}
+\DoxyCodeLine{00042\ \ \ \ \ std::vector<position>\ \mbox{\hyperlink{classmodel_1_1_board_aa8901691f8f19088177d1e1f94a76057}{getCurrentBrickPos}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00043\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{classmodel_1_1_board_a9f16abcf751142d39011a7084576135a}{isBrickBottom}}();}
+\DoxyCodeLine{00044\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{classmodel_1_1_board_a034e40ae0e9c48ebdd366eb5403ae14b}{isPosistionInsideBrick}}(\textcolor{keywordtype}{int}\ row,\ \textcolor{keywordtype}{int}\ col);}
+\DoxyCodeLine{00045\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classmodel_1_1_board_a5d413598e76e3a26f11e403d7de6a830}{clearLine}}(\textcolor{keywordtype}{int}\ row);}
+\DoxyCodeLine{00046\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{classmodel_1_1_board_a0891b7f3cc792e001c026e525e10c2d6}{rowFull}}(\textcolor{keywordtype}{int}\ row);}
+\DoxyCodeLine{00047\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classmodel_1_1_board_a0f9f65807efea4c2c79ed8d58524664b}{moveDownLine}}(\textcolor{keywordtype}{int}\ row,\ \textcolor{keywordtype}{int}\ rowsNum);}
+\DoxyCodeLine{00048\ \ \ \ \ \textcolor{keywordtype}{void}\ setCurrentBrickToNull();}
+\DoxyCodeLine{00049\ \ \ \ \ std::vector<std::vector<int>>\ getBoard();}
+\DoxyCodeLine{00050\ \ \ \ \ \textcolor{keywordtype}{void}\ setBoard(\textcolor{keyword}{const}\ \mbox{\hyperlink{classmodel_1_1_board}{Board}}\ \&board);}
+\DoxyCodeLine{00051\ \ \ \ \ \textcolor{keywordtype}{void}\ draw(QPainter\&\ painter);\textcolor{comment}{//\ TEST\ AJOUT}}
+\DoxyCodeLine{00052\ \};}
+\DoxyCodeLine{00053\ }
+\DoxyCodeLine{00054\ \}}
+\DoxyCodeLine{00055\ }
+\DoxyCodeLine{00056\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ BOARD\_H}}
+\DoxyCodeLine{00057\ }
+
+\end{DoxyCode}

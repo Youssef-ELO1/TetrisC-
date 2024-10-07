@@ -1,0 +1,162 @@
+\doxysection{controler\+::Controler Class Reference}
+\hypertarget{classcontroler_1_1_controler}{}\label{classcontroler_1_1_controler}\index{controler::Controler@{controler::Controler}}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classcontroler_1_1_controler_a9150171a9ac8e8487f765e749573bf89}{Controler}} (\mbox{\hyperlink{classmodel_1_1_game}{model\+::\+Game}} b, \mbox{\hyperlink{classview_1_1_view}{view\+::\+View}} \&v)
+\begin{DoxyCompactList}\small\item\em Constructeur de la classe \doxylink{classcontroler_1_1_controler}{Controler}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classcontroler_1_1_controler_ae09502a0e3b8e27787e5e41f003b7800}{draw}} ()
+\begin{DoxyCompactList}\small\item\em Méthode pour afficher le jeu. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classcontroler_1_1_controler_a1b4a6af367050062684db592ad5d8e4c}{handle\+Input}} (int key\+Pressed=0)
+\begin{DoxyCompactList}\small\item\em Méthode pour gérer l\textquotesingle{}entrée utilisateur. \end{DoxyCompactList}\item 
+\Hypertarget{classcontroler_1_1_controler_aaeb2793a876339732cb12066bb679907}\label{classcontroler_1_1_controler_aaeb2793a876339732cb12066bb679907} 
+int {\bfseries get\+Key\+Pressed} ()
+\item 
+void \mbox{\hyperlink{classcontroler_1_1_controler_a75057e4d52de48126524bf06a2b0929f}{update\+Game}} ()
+\begin{DoxyCompactList}\small\item\em Méthode pour mettre à jour le jeu. \end{DoxyCompactList}\item 
+\Hypertarget{classcontroler_1_1_controler_a06a0f801d65598eafb161a1784b2753c}\label{classcontroler_1_1_controler_a06a0f801d65598eafb161a1784b2753c} 
+bool {\bfseries is\+Game\+Over} ()
+\item 
+void \mbox{\hyperlink{classcontroler_1_1_controler_ac9b52265c511bafcd9778921da8bca2d}{Game\+Over}} ()
+\begin{DoxyCompactList}\small\item\em Méthode pour gérer la fin de partie. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classcontroler_1_1_controler_abc86c8aaa770ceb5a71cadbabb0e0ef8}{winner}} ()
+\begin{DoxyCompactList}\small\item\em Méthode pour vérifier si le joueur a gagné. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classcontroler_1_1_controler_a7ea9616f13c7171fb8b17e54f240b80e}{get\+Score}} () const
+\begin{DoxyCompactList}\small\item\em Méthode pour obtenir le score actuel. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classcontroler_1_1_controler_a555e917c5940a29729e82ccbabbbcbb8}{get\+Level}} () const
+\begin{DoxyCompactList}\small\item\em Méthode pour obtenir le niveau actuel. \end{DoxyCompactList}\item 
+\Hypertarget{classcontroler_1_1_controler_ac227fa2578ee39a7102f4fe06824207d}\label{classcontroler_1_1_controler_ac227fa2578ee39a7102f4fe06824207d} 
+int {\bfseries get\+Nb\+Line\+Cleared} () const
+\item 
+\Hypertarget{classcontroler_1_1_controler_a9cb115ca186e6e1a283016dccb320119}\label{classcontroler_1_1_controler_a9cb115ca186e6e1a283016dccb320119} 
+int {\bfseries get\+Input} ()
+\item 
+void \mbox{\hyperlink{classcontroler_1_1_controler_adadd9efb3927fcc51bcf8d0ae237f83f}{play}} ()
+\begin{DoxyCompactList}\small\item\em Lance le jeu Tetris. \end{DoxyCompactList}\item 
+\Hypertarget{classcontroler_1_1_controler_af64b16d335e53dae86fa2da8463cf5b0}\label{classcontroler_1_1_controler_af64b16d335e53dae86fa2da8463cf5b0} 
+\mbox{\hyperlink{classmodel_1_1_board}{model\+::\+Board}} {\bfseries get\+Board} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classcontroler_1_1_controler_a9150171a9ac8e8487f765e749573bf89}\label{classcontroler_1_1_controler_a9150171a9ac8e8487f765e749573bf89} 
+\index{controler::Controler@{controler::Controler}!Controler@{Controler}}
+\index{Controler@{Controler}!controler::Controler@{controler::Controler}}
+\doxysubsubsection{\texorpdfstring{Controler()}{Controler()}}
+{\footnotesize\ttfamily controler\+::\+Controler\+::\+Controler (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classmodel_1_1_game}{model\+::\+Game}}}]{b,  }\item[{\mbox{\hyperlink{classview_1_1_view}{view\+::\+View}} \&}]{v }\end{DoxyParamCaption})}
+
+
+
+Constructeur de la classe \doxylink{classcontroler_1_1_controler}{Controler}. 
+
+Initialise le contrôleur avec le plateau de jeu et la vue.
+
+
+\begin{DoxyParams}{Parameters}
+{\em b} & Référence vers l\textquotesingle{}objet Board. \\
+\hline
+{\em v} & Référence vers l\textquotesingle{}objet View. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classcontroler_1_1_controler_ae09502a0e3b8e27787e5e41f003b7800}\label{classcontroler_1_1_controler_ae09502a0e3b8e27787e5e41f003b7800} 
+\index{controler::Controler@{controler::Controler}!draw@{draw}}
+\index{draw@{draw}!controler::Controler@{controler::Controler}}
+\doxysubsubsection{\texorpdfstring{draw()}{draw()}}
+{\footnotesize\ttfamily void controler\+::\+Controler\+::draw (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Méthode pour afficher le jeu. 
+
+Cette méthode utilise l\textquotesingle{}objet View pour afficher le plateau de jeu, le score et le niveau actuels. \Hypertarget{classcontroler_1_1_controler_ac9b52265c511bafcd9778921da8bca2d}\label{classcontroler_1_1_controler_ac9b52265c511bafcd9778921da8bca2d} 
+\index{controler::Controler@{controler::Controler}!GameOver@{GameOver}}
+\index{GameOver@{GameOver}!controler::Controler@{controler::Controler}}
+\doxysubsubsection{\texorpdfstring{GameOver()}{GameOver()}}
+{\footnotesize\ttfamily void controler\+::\+Controler\+::\+Game\+Over (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Méthode pour gérer la fin de partie. 
+
+Cette méthode affiche l\textquotesingle{}écran de fin de partie à l\textquotesingle{}aide de l\textquotesingle{}objet View et termine le programme. \Hypertarget{classcontroler_1_1_controler_a555e917c5940a29729e82ccbabbbcbb8}\label{classcontroler_1_1_controler_a555e917c5940a29729e82ccbabbbcbb8} 
+\index{controler::Controler@{controler::Controler}!getLevel@{getLevel}}
+\index{getLevel@{getLevel}!controler::Controler@{controler::Controler}}
+\doxysubsubsection{\texorpdfstring{getLevel()}{getLevel()}}
+{\footnotesize\ttfamily int controler\+::\+Controler\+::get\+Level (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Méthode pour obtenir le niveau actuel. 
+
+\begin{DoxyReturn}{Returns}
+Le niveau actuel. 
+\end{DoxyReturn}
+\Hypertarget{classcontroler_1_1_controler_a7ea9616f13c7171fb8b17e54f240b80e}\label{classcontroler_1_1_controler_a7ea9616f13c7171fb8b17e54f240b80e} 
+\index{controler::Controler@{controler::Controler}!getScore@{getScore}}
+\index{getScore@{getScore}!controler::Controler@{controler::Controler}}
+\doxysubsubsection{\texorpdfstring{getScore()}{getScore()}}
+{\footnotesize\ttfamily int controler\+::\+Controler\+::get\+Score (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Méthode pour obtenir le score actuel. 
+
+\begin{DoxyReturn}{Returns}
+Le score actuel. 
+\end{DoxyReturn}
+\Hypertarget{classcontroler_1_1_controler_a1b4a6af367050062684db592ad5d8e4c}\label{classcontroler_1_1_controler_a1b4a6af367050062684db592ad5d8e4c} 
+\index{controler::Controler@{controler::Controler}!handleInput@{handleInput}}
+\index{handleInput@{handleInput}!controler::Controler@{controler::Controler}}
+\doxysubsubsection{\texorpdfstring{handleInput()}{handleInput()}}
+{\footnotesize\ttfamily void controler\+::\+Controler\+::handle\+Input (\begin{DoxyParamCaption}\item[{int}]{key\+Pressed = {\ttfamily 0} }\end{DoxyParamCaption})}
+
+
+
+Méthode pour gérer l\textquotesingle{}entrée utilisateur. 
+
+Cette méthode obtient la touche pressée par l\textquotesingle{}utilisateur à l\textquotesingle{}aide de l\textquotesingle{}objet View et effectue l\textquotesingle{}action correspondante sur le plateau de jeu. \Hypertarget{classcontroler_1_1_controler_adadd9efb3927fcc51bcf8d0ae237f83f}\label{classcontroler_1_1_controler_adadd9efb3927fcc51bcf8d0ae237f83f} 
+\index{controler::Controler@{controler::Controler}!play@{play}}
+\index{play@{play}!controler::Controler@{controler::Controler}}
+\doxysubsubsection{\texorpdfstring{play()}{play()}}
+{\footnotesize\ttfamily void controler\+::\+Controler\+::play (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Lance le jeu Tetris. 
+
+Cette méthode contrôle le déroulement du jeu Tetris en bouclant jusqu\textquotesingle{}à ce que le jeu se termine ou que le joueur gagne.
+
+Le jeu est affiché à l\textquotesingle{}écran, puis une boucle est exécutée tant que le jeu n\textquotesingle{}est pas terminé et que le joueur n\textquotesingle{}a pas gagné. À chaque itération de la boucle, la méthode Handle\+Input() est appelée pour gérer l\textquotesingle{}entrée utilisateur, puis la méthode \doxylink{classcontroler_1_1_controler_a75057e4d52de48126524bf06a2b0929f}{update\+Game()} est appelée pour mettre à jour l\textquotesingle{}état du jeu. Enfin, le jeu mis à jour est à nouveau affiché à l\textquotesingle{}écran. \Hypertarget{classcontroler_1_1_controler_a75057e4d52de48126524bf06a2b0929f}\label{classcontroler_1_1_controler_a75057e4d52de48126524bf06a2b0929f} 
+\index{controler::Controler@{controler::Controler}!updateGame@{updateGame}}
+\index{updateGame@{updateGame}!controler::Controler@{controler::Controler}}
+\doxysubsubsection{\texorpdfstring{updateGame()}{updateGame()}}
+{\footnotesize\ttfamily void controler\+::\+Controler\+::update\+Game (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Méthode pour mettre à jour le jeu. 
+
+Cette méthode met à jour le plateau de jeu en faisant descendre la brique actuelle et en vérifiant si le jeu est terminé. \Hypertarget{classcontroler_1_1_controler_abc86c8aaa770ceb5a71cadbabb0e0ef8}\label{classcontroler_1_1_controler_abc86c8aaa770ceb5a71cadbabb0e0ef8} 
+\index{controler::Controler@{controler::Controler}!winner@{winner}}
+\index{winner@{winner}!controler::Controler@{controler::Controler}}
+\doxysubsubsection{\texorpdfstring{winner()}{winner()}}
+{\footnotesize\ttfamily bool controler\+::\+Controler\+::winner (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Méthode pour vérifier si le joueur a gagné. 
+
+Cette méthode vérifie si le score actuel est supérieur à 1500, et si c\textquotesingle{}est le cas, affiche un message de victoire à l\textquotesingle{}aide de l\textquotesingle{}objet View.
+
+\begin{DoxyReturn}{Returns}
+true si le joueur a gagné, sinon false. 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Controler.\+h\item 
+\mbox{\hyperlink{_controler_8cpp}{Controler.\+cpp}}\end{DoxyCompactItemize}

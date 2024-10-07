@@ -1,0 +1,43 @@
+\doxysection{Controler.\+h}
+\hypertarget{_controler_8h_source}{}\label{_controler_8h_source}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#ifndef\ CONTROLER\_H}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#define\ CONTROLER\_H}}
+\DoxyCodeLine{00003\ }
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ "{}Board.h"{}}}
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#include\ "{}game.h"{}}}
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#include\ "{}view.h"{}}}
+\DoxyCodeLine{00007\ }
+\DoxyCodeLine{00008\ }
+\DoxyCodeLine{00009\ \textcolor{keyword}{namespace\ }controler\ \{}
+\DoxyCodeLine{00010\ }
+\DoxyCodeLine{00011\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classcontroler_1_1_controler}{Controler}}}
+\DoxyCodeLine{00012\ \{}
+\DoxyCodeLine{00013\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00014\ \ \ \ \ \mbox{\hyperlink{classcontroler_1_1_controler_a9150171a9ac8e8487f765e749573bf89}{Controler}}(\mbox{\hyperlink{classmodel_1_1_game}{model::Game}}\ b,\mbox{\hyperlink{classview_1_1_view}{view::View}}\&\ v);}
+\DoxyCodeLine{00015\ }
+\DoxyCodeLine{00016\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classcontroler_1_1_controler_ae09502a0e3b8e27787e5e41f003b7800}{draw}}();}
+\DoxyCodeLine{00017\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classcontroler_1_1_controler_a1b4a6af367050062684db592ad5d8e4c}{handleInput}}(\textcolor{keywordtype}{int}\ keyPressed=0);}
+\DoxyCodeLine{00018\ \ \ \ \ \textcolor{keywordtype}{int}\ getKeyPressed();}
+\DoxyCodeLine{00019\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classcontroler_1_1_controler_a75057e4d52de48126524bf06a2b0929f}{updateGame}}();}
+\DoxyCodeLine{00020\ \ \ \ \ \textcolor{keywordtype}{bool}\ isGameOver();}
+\DoxyCodeLine{00021\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classcontroler_1_1_controler_ac9b52265c511bafcd9778921da8bca2d}{GameOver}}();}
+\DoxyCodeLine{00022\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{classcontroler_1_1_controler_abc86c8aaa770ceb5a71cadbabb0e0ef8}{winner}}();}
+\DoxyCodeLine{00023\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{classcontroler_1_1_controler_a7ea9616f13c7171fb8b17e54f240b80e}{getScore}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00024\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{classcontroler_1_1_controler_a555e917c5940a29729e82ccbabbbcbb8}{getLevel}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00025\ \ \ \ \ \textcolor{keywordtype}{int}\ getNbLineCleared()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00026\ \ \ \ \ \textcolor{keywordtype}{int}\ getInput();}
+\DoxyCodeLine{00027\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classcontroler_1_1_controler_adadd9efb3927fcc51bcf8d0ae237f83f}{play}}();}
+\DoxyCodeLine{00028\ \ \ \ \ \mbox{\hyperlink{classmodel_1_1_board}{model::Board}}\ getBoard();}
+\DoxyCodeLine{00029\ }
+\DoxyCodeLine{00030\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00031\ \ \ \ \ \mbox{\hyperlink{classmodel_1_1_game}{model::Game}}\&\ board;}
+\DoxyCodeLine{00032\ \ \ \ \ \mbox{\hyperlink{classview_1_1_view}{view::View}}\ view;}
+\DoxyCodeLine{00033\ \ \ \ \ \textcolor{keywordtype}{bool}\ gameOver;}
+\DoxyCodeLine{00034\ \};}
+\DoxyCodeLine{00035\ }
+\DoxyCodeLine{00036\ \}}
+\DoxyCodeLine{00037\ }
+\DoxyCodeLine{00038\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ CONTROLER\_H}}
+
+\end{DoxyCode}

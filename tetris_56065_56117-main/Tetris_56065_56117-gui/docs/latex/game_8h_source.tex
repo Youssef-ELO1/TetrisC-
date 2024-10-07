@@ -1,0 +1,53 @@
+\doxysection{game.\+h}
+\hypertarget{game_8h_source}{}\label{game_8h_source}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#ifndef\ GAME\_H}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#define\ GAME\_H}}
+\DoxyCodeLine{00003\ }
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ "{}Board.h"{}}}
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#include\ "{}brick.h"{}}}
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#include\ "{}brickFactory.h"{}}}
+\DoxyCodeLine{00007\ }
+\DoxyCodeLine{00008\ \textcolor{keyword}{namespace\ }model\ \{}
+\DoxyCodeLine{00009\ }
+\DoxyCodeLine{00010\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classmodel_1_1_game}{Game}}\ \{}
+\DoxyCodeLine{00011\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00012\ \ \ \ \ \mbox{\hyperlink{classmodel_1_1_board}{Board}}\ board;}
+\DoxyCodeLine{00013\ \ \ \ \ \textcolor{comment}{//brickFactory\ brickFormation;}}
+\DoxyCodeLine{00014\ \ \ \ \ \textcolor{keywordtype}{int}\ score;}
+\DoxyCodeLine{00015\ \ \ \ \ \textcolor{keywordtype}{int}\ level;}
+\DoxyCodeLine{00016\ \ \ \ \ \textcolor{keywordtype}{int}\ nbLineCleared;}
+\DoxyCodeLine{00017\ \textcolor{comment}{//\ \ \ \ int\ lineClearedForLevel;}}
+\DoxyCodeLine{00018\ }
+\DoxyCodeLine{00019\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00020\ \ \ \ \ \textcolor{keyword}{explicit}\ \mbox{\hyperlink{classmodel_1_1_game}{Game}}();}
+\DoxyCodeLine{00021\ \ \ \ \ \mbox{\hyperlink{classmodel_1_1_game}{Game}}(\textcolor{keywordtype}{int}\ row,\ \textcolor{keywordtype}{int}\ col);}
+\DoxyCodeLine{00022\ }
+\DoxyCodeLine{00023\ \ \ \ \ \textcolor{keywordtype}{int}\ lineClearedForLevel;}
+\DoxyCodeLine{00024\ \ \ \ \ \textcolor{keywordtype}{void}\ start();\ \textcolor{comment}{//à\ effacer}}
+\DoxyCodeLine{00025\ \ \ \ \ \textcolor{keywordtype}{void}\ startPersonalized();\ \textcolor{comment}{//à\ effacer}}
+\DoxyCodeLine{00026\ \ \ \ \ \textcolor{comment}{//brick*\ getRandomBrick()\ const;}}
+\DoxyCodeLine{00027\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{classmodel_1_1_game_adf084fa004dc0c0a89a63ba69f98c5e8}{clearAllLines}}();}
+\DoxyCodeLine{00028\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classmodel_1_1_game_a0e029d7df1a66e0843d39b46ab838073}{moveBrickLeft}}();}
+\DoxyCodeLine{00029\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classmodel_1_1_game_a632b99f01ab443589a4c1d0492b7a988}{moveBrickRight}}();}
+\DoxyCodeLine{00030\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classmodel_1_1_game_a3b1fc81affc04e4a4fe3b01949bdbd0e}{moveBrickDown}}();}
+\DoxyCodeLine{00031\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classmodel_1_1_game_ac988f007a011b0eb2a7e7f8e92b8262b}{rotateBrick}}();}
+\DoxyCodeLine{00032\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classmodel_1_1_game_aa1a665282a1127d9c12eca21fceff1c8}{undoRotateBrick}}();}
+\DoxyCodeLine{00033\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{classmodel_1_1_game_a9974ccd56a5913c72efe9cf0420cddaa}{drop}}();}
+\DoxyCodeLine{00034\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classmodel_1_1_game_a8458d0a147ce32fc0b5071acf894f803}{updateScore}}(\textcolor{keywordtype}{int}\ clearedLines,\ \textcolor{keywordtype}{int}\ dropHeight);}
+\DoxyCodeLine{00035\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{classmodel_1_1_game_a85477e0fd12f57e077c873c28c490014}{getScore}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00036\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{classmodel_1_1_game_a459d96f3b6622f8ef50e5a27a754c2d9}{getLevel}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00037\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classmodel_1_1_game_a06ad4f7b24379b0bfeffe3716e0565d8}{updateLevel}}(\textcolor{keywordtype}{int}\ maxLevel);}
+\DoxyCodeLine{00038\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{classmodel_1_1_game_afd819d33bb89229acc85c577f4f2d32b}{getLevelInterval}}();}
+\DoxyCodeLine{00039\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{classmodel_1_1_game_aa11f411b5361deaf9b2370d667f5ce8e}{getNbLineCleared}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00040\ \ \ \ \ \mbox{\hyperlink{classmodel_1_1_board}{Board}}\ getBoard();}
+\DoxyCodeLine{00041\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{classmodel_1_1_game_aca7dffaba120238ae57d09298398cc73}{updateGame}}();}
+\DoxyCodeLine{00042\ \ \ \ \ \textcolor{keywordtype}{void}\ setBoard(\textcolor{keyword}{const}\ \mbox{\hyperlink{classmodel_1_1_board}{Board}}\ \&b);}
+\DoxyCodeLine{00043\ \ \ \ \ \textcolor{comment}{//void\ setLockedBrick();}}
+\DoxyCodeLine{00044\ \};}
+\DoxyCodeLine{00045\ }
+\DoxyCodeLine{00046\ \}}
+\DoxyCodeLine{00047\ }
+\DoxyCodeLine{00048\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ GAME\_H}}
+
+\end{DoxyCode}

@@ -1,0 +1,75 @@
+\doxysection{model\+::Obrick Class Reference}
+\hypertarget{classmodel_1_1_obrick}{}\label{classmodel_1_1_obrick}\index{model::Obrick@{model::Obrick}}
+Inheritance diagram for model\+::Obrick\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classmodel_1_1_obrick}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classmodel_1_1_obrick_af67625011857b1c7606732fe5d9ac637}{Obrick}} (int cols)
+\begin{DoxyCompactList}\small\item\em Constructeur de la classe \doxylink{classmodel_1_1_obrick}{Obrick}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{classmodel_1_1brick}{model\+::brick}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classmodel_1_1brick_a37315447da7e0cf8899a8562bf5efa78}{brick}} ()
+\begin{DoxyCompactList}\small\item\em Constructeur de la classe brick. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classmodel_1_1brick_a72b6226443aca6cf1de1375a33bab740}{draw}} ()
+\begin{DoxyCompactList}\small\item\em Méthode pour dessiner la brique. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classmodel_1_1brick_aa6228c61ac274279ea7a2b8ca6dfb584}{move}} (int rows, int column)
+\begin{DoxyCompactList}\small\item\em Méthode pour déplacer la brique. \end{DoxyCompactList}\item 
+std\+::vector$<$ \mbox{\hyperlink{classmodel_1_1position}{position}} $>$ \mbox{\hyperlink{classmodel_1_1brick_ae833348bcebdd591142e045f865ac539}{get\+Position}} ()
+\begin{DoxyCompactList}\small\item\em Méthode pour obtenir les positions des cases de la brique. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classmodel_1_1brick_a94355ff9198189cfd396a8d9adcde9d1}{rotate}} ()
+\begin{DoxyCompactList}\small\item\em Méthode pour faire tourner la brique dans le sens horaire. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classmodel_1_1brick_ab4377e34aac4404772a8f3617276f273}{undo\+Rotate}} ()
+\begin{DoxyCompactList}\small\item\em Méthode pour annuler la rotation de la brique. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Additional Inherited Members}
+\doxysubsection*{Public Attributes inherited from \mbox{\hyperlink{classmodel_1_1brick}{model\+::brick}}}
+\begin{DoxyCompactItemize}
+\item 
+bool {\bfseries active} = true
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes inherited from \mbox{\hyperlink{classmodel_1_1brick}{model\+::brick}}}
+\begin{DoxyCompactItemize}
+\item 
+int {\bfseries rotation}
+\item 
+int {\bfseries row\+Offset}
+\item 
+int {\bfseries colum\+Offset}
+\item 
+int {\bfseries cols}
+\item 
+int {\bfseries id}
+\item 
+char {\bfseries fill\+Char}
+\item 
+std\+::map$<$ int, std\+::vector$<$ \mbox{\hyperlink{classmodel_1_1position}{position}} $>$ $>$ {\bfseries cases}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classmodel_1_1_obrick_af67625011857b1c7606732fe5d9ac637}\label{classmodel_1_1_obrick_af67625011857b1c7606732fe5d9ac637} 
+\index{model::Obrick@{model::Obrick}!Obrick@{Obrick}}
+\index{Obrick@{Obrick}!model::Obrick@{model::Obrick}}
+\doxysubsubsection{\texorpdfstring{Obrick()}{Obrick()}}
+{\footnotesize\ttfamily model\+::\+Obrick\+::\+Obrick (\begin{DoxyParamCaption}\item[{int}]{col }\end{DoxyParamCaption})}
+
+
+
+Constructeur de la classe \doxylink{classmodel_1_1_obrick}{Obrick}. 
+
+Initialise une brique de type O avec ses configurations de cases pour chaque rotation.
+
+Les configurations de cases sont définies comme suit \+:
+\begin{DoxyItemize}
+\item Rotation 0 \+: positions (0,0), (0,1), (1,0), (1,1) 
+\end{DoxyItemize}
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+brick\+Factory.\+h\item 
+brick\+Factory.\+cpp\end{DoxyCompactItemize}

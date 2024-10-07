@@ -1,0 +1,234 @@
+\doxysection{model\+::Game Class Reference}
+\hypertarget{classmodel_1_1_game}{}\label{classmodel_1_1_game}\index{model::Game@{model::Game}}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classmodel_1_1_game_a314061323aaa6329b69774026fb45f37}\label{classmodel_1_1_game_a314061323aaa6329b69774026fb45f37} 
+{\bfseries Game} (int row, int col)
+\item 
+\Hypertarget{classmodel_1_1_game_abf59475bfc3cb04240766e73ed9ce3f7}\label{classmodel_1_1_game_abf59475bfc3cb04240766e73ed9ce3f7} 
+void {\bfseries start} ()
+\item 
+\Hypertarget{classmodel_1_1_game_a884c44ae1074584cd373461404abab9a}\label{classmodel_1_1_game_a884c44ae1074584cd373461404abab9a} 
+void {\bfseries start\+Personalized} ()
+\item 
+int \mbox{\hyperlink{classmodel_1_1_game_adf084fa004dc0c0a89a63ba69f98c5e8}{clear\+All\+Lines}} ()
+\begin{DoxyCompactList}\small\item\em Méthode pour effacer toutes les lignes complètes du tableau. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classmodel_1_1_game_a0e029d7df1a66e0843d39b46ab838073}{move\+Brick\+Left}} ()
+\begin{DoxyCompactList}\small\item\em Méthode pour déplacer la brique actuelle vers la gauche. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classmodel_1_1_game_a632b99f01ab443589a4c1d0492b7a988}{move\+Brick\+Right}} ()
+\begin{DoxyCompactList}\small\item\em Méthode pour déplacer la brique actuelle vers la droite. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classmodel_1_1_game_a3b1fc81affc04e4a4fe3b01949bdbd0e}{move\+Brick\+Down}} ()
+\begin{DoxyCompactList}\small\item\em Méthode pour descendre la brique d\textquotesingle{}une ligne. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classmodel_1_1_game_ac988f007a011b0eb2a7e7f8e92b8262b}{rotate\+Brick}} ()
+\begin{DoxyCompactList}\small\item\em Méthode pour faire tourner la brique actuelle dans le sens horloger. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classmodel_1_1_game_aa1a665282a1127d9c12eca21fceff1c8}{undo\+Rotate\+Brick}} ()
+\begin{DoxyCompactList}\small\item\em Méthode pour faire tourner la brique actuelle dans le sens anti horloger. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classmodel_1_1_game_a9974ccd56a5913c72efe9cf0420cddaa}{drop}} ()
+\begin{DoxyCompactList}\small\item\em Fait tomber la brique actuelle jusqu\textquotesingle{}à ce qu\textquotesingle{}elle rencontre une autre brique ou atteigne le bas du plateau de jeu. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classmodel_1_1_game_a8458d0a147ce32fc0b5071acf894f803}{update\+Score}} (int cleared\+Lines, int drop\+Height)
+\begin{DoxyCompactList}\small\item\em Méthode pour mettre à jour le score. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classmodel_1_1_game_a85477e0fd12f57e077c873c28c490014}{get\+Score}} () const
+\begin{DoxyCompactList}\small\item\em Méthode pour obtenir le score actuel. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classmodel_1_1_game_a459d96f3b6622f8ef50e5a27a754c2d9}{get\+Level}} () const
+\begin{DoxyCompactList}\small\item\em Méthode pour obtenir le niveau actuel. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classmodel_1_1_game_a06ad4f7b24379b0bfeffe3716e0565d8}{update\+Level}} (int max\+Level)
+\begin{DoxyCompactList}\small\item\em Met à jour le niveau du jeu. \end{DoxyCompactList}\item 
+\Hypertarget{classmodel_1_1_game_afd819d33bb89229acc85c577f4f2d32b}\label{classmodel_1_1_game_afd819d33bb89229acc85c577f4f2d32b} 
+int {\bfseries get\+Level\+Interval} ()
+\begin{DoxyCompactList}\small\item\em Retourne l\textquotesingle{}unité de temps (en ms) en fonction du niveau. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classmodel_1_1_game_aa11f411b5361deaf9b2370d667f5ce8e}{get\+Nb\+Line\+Cleared}} () const
+\begin{DoxyCompactList}\small\item\em Méthode pour obtenir le nombre de lignes effacées. \end{DoxyCompactList}\item 
+\Hypertarget{classmodel_1_1_game_a83647f8923193af19f98d4cad39c49fd}\label{classmodel_1_1_game_a83647f8923193af19f98d4cad39c49fd} 
+\mbox{\hyperlink{classmodel_1_1_board}{Board}} {\bfseries get\+Board} ()
+\item 
+bool \mbox{\hyperlink{classmodel_1_1_game_aca7dffaba120238ae57d09298398cc73}{update\+Game}} ()
+\begin{DoxyCompactList}\small\item\em Méthode pour mettre à jour le plateau de jeu. \end{DoxyCompactList}\item 
+\Hypertarget{classmodel_1_1_game_ad2d0a4ba101981bcef5a20d34fbb40bc}\label{classmodel_1_1_game_ad2d0a4ba101981bcef5a20d34fbb40bc} 
+void {\bfseries set\+Board} (const \mbox{\hyperlink{classmodel_1_1_board}{Board}} \&b)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classmodel_1_1_game_aa484a9752fd2515d704b4cc60663738b}\label{classmodel_1_1_game_aa484a9752fd2515d704b4cc60663738b} 
+int {\bfseries line\+Cleared\+For\+Level}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classmodel_1_1_game_adf084fa004dc0c0a89a63ba69f98c5e8}\label{classmodel_1_1_game_adf084fa004dc0c0a89a63ba69f98c5e8} 
+\index{model::Game@{model::Game}!clearAllLines@{clearAllLines}}
+\index{clearAllLines@{clearAllLines}!model::Game@{model::Game}}
+\doxysubsubsection{\texorpdfstring{clearAllLines()}{clearAllLines()}}
+{\footnotesize\ttfamily int model\+::\+Game\+::clear\+All\+Lines (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Méthode pour effacer toutes les lignes complètes du tableau. 
+
+Parcourt le tableau de bas en haut, vérifie si chaque ligne est pleine, et efface les lignes complètes en déplaçant les lignes situées au-\/dessus vers le bas. Invrémente le nombre de ligne effacé.
+
+\begin{DoxyReturn}{Returns}
+Le nombre de lignes effacées. 
+\end{DoxyReturn}
+\Hypertarget{classmodel_1_1_game_a9974ccd56a5913c72efe9cf0420cddaa}\label{classmodel_1_1_game_a9974ccd56a5913c72efe9cf0420cddaa} 
+\index{model::Game@{model::Game}!drop@{drop}}
+\index{drop@{drop}!model::Game@{model::Game}}
+\doxysubsubsection{\texorpdfstring{drop()}{drop()}}
+{\footnotesize\ttfamily int model\+::\+Game\+::drop (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Fait tomber la brique actuelle jusqu\textquotesingle{}à ce qu\textquotesingle{}elle rencontre une autre brique ou atteigne le bas du plateau de jeu. 
+
+Cette méthode déplace la brique actuelle vers le bas jusqu\textquotesingle{}à ce qu\textquotesingle{}elle soit bloquée par une autre brique ou atteigne le bas du plateau de jeu. Elle retourne la hauteur de chute de la brique.
+
+\begin{DoxyReturn}{Returns}
+La hauteur de chute de la brique. 
+\end{DoxyReturn}
+\Hypertarget{classmodel_1_1_game_a459d96f3b6622f8ef50e5a27a754c2d9}\label{classmodel_1_1_game_a459d96f3b6622f8ef50e5a27a754c2d9} 
+\index{model::Game@{model::Game}!getLevel@{getLevel}}
+\index{getLevel@{getLevel}!model::Game@{model::Game}}
+\doxysubsubsection{\texorpdfstring{getLevel()}{getLevel()}}
+{\footnotesize\ttfamily int model\+::\+Game\+::get\+Level (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Méthode pour obtenir le niveau actuel. 
+
+\begin{DoxyReturn}{Returns}
+Le niveau actuel. 
+\end{DoxyReturn}
+\Hypertarget{classmodel_1_1_game_aa11f411b5361deaf9b2370d667f5ce8e}\label{classmodel_1_1_game_aa11f411b5361deaf9b2370d667f5ce8e} 
+\index{model::Game@{model::Game}!getNbLineCleared@{getNbLineCleared}}
+\index{getNbLineCleared@{getNbLineCleared}!model::Game@{model::Game}}
+\doxysubsubsection{\texorpdfstring{getNbLineCleared()}{getNbLineCleared()}}
+{\footnotesize\ttfamily int model\+::\+Game\+::get\+Nb\+Line\+Cleared (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Méthode pour obtenir le nombre de lignes effacées. 
+
+\begin{DoxyReturn}{Returns}
+Le nombre de ligne effacées pendant la partie. 
+\end{DoxyReturn}
+\Hypertarget{classmodel_1_1_game_a85477e0fd12f57e077c873c28c490014}\label{classmodel_1_1_game_a85477e0fd12f57e077c873c28c490014} 
+\index{model::Game@{model::Game}!getScore@{getScore}}
+\index{getScore@{getScore}!model::Game@{model::Game}}
+\doxysubsubsection{\texorpdfstring{getScore()}{getScore()}}
+{\footnotesize\ttfamily int model\+::\+Game\+::get\+Score (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Méthode pour obtenir le score actuel. 
+
+\begin{DoxyReturn}{Returns}
+Le score actuel. 
+\end{DoxyReturn}
+\Hypertarget{classmodel_1_1_game_a3b1fc81affc04e4a4fe3b01949bdbd0e}\label{classmodel_1_1_game_a3b1fc81affc04e4a4fe3b01949bdbd0e} 
+\index{model::Game@{model::Game}!moveBrickDown@{moveBrickDown}}
+\index{moveBrickDown@{moveBrickDown}!model::Game@{model::Game}}
+\doxysubsubsection{\texorpdfstring{moveBrickDown()}{moveBrickDown()}}
+{\footnotesize\ttfamily void model\+::\+Game\+::move\+Brick\+Down (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Méthode pour descendre la brique d\textquotesingle{}une ligne. 
+
+Cette méthode déplace la brique actuelle vers le bas d\textquotesingle{}une ligne. Si la brique sort du tableau ou entre en collision avec une autre brique, elle est verrouillée dans sa position actuelle. Elle met également à jour le score avec le nombre de lignes complètes effacées. \Hypertarget{classmodel_1_1_game_a0e029d7df1a66e0843d39b46ab838073}\label{classmodel_1_1_game_a0e029d7df1a66e0843d39b46ab838073} 
+\index{model::Game@{model::Game}!moveBrickLeft@{moveBrickLeft}}
+\index{moveBrickLeft@{moveBrickLeft}!model::Game@{model::Game}}
+\doxysubsubsection{\texorpdfstring{moveBrickLeft()}{moveBrickLeft()}}
+{\footnotesize\ttfamily void model\+::\+Game\+::move\+Brick\+Left (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Méthode pour déplacer la brique actuelle vers la gauche. 
+
+Cette méthode déplace la brique actuelle vers la gauche d\textquotesingle{}une colonne. Si la brique sort du tableau ou entre en collision avec une autre brique, elle est ramenée à sa position précédente. Si elle se trouve tout en bas du plateau, la brique actuelle est verrouillée. \Hypertarget{classmodel_1_1_game_a632b99f01ab443589a4c1d0492b7a988}\label{classmodel_1_1_game_a632b99f01ab443589a4c1d0492b7a988} 
+\index{model::Game@{model::Game}!moveBrickRight@{moveBrickRight}}
+\index{moveBrickRight@{moveBrickRight}!model::Game@{model::Game}}
+\doxysubsubsection{\texorpdfstring{moveBrickRight()}{moveBrickRight()}}
+{\footnotesize\ttfamily void model\+::\+Game\+::move\+Brick\+Right (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Méthode pour déplacer la brique actuelle vers la droite. 
+
+Cette méthode déplace la brique actuelle vers la droite d\textquotesingle{}une colonne. Si la brique sort du tableau ou entre en collision avec une autre brique, elle est ramenée à sa position précédente. Si elle se trouve tout en bas du plateau, la brique actuelle est verrouillée. \Hypertarget{classmodel_1_1_game_ac988f007a011b0eb2a7e7f8e92b8262b}\label{classmodel_1_1_game_ac988f007a011b0eb2a7e7f8e92b8262b} 
+\index{model::Game@{model::Game}!rotateBrick@{rotateBrick}}
+\index{rotateBrick@{rotateBrick}!model::Game@{model::Game}}
+\doxysubsubsection{\texorpdfstring{rotateBrick()}{rotateBrick()}}
+{\footnotesize\ttfamily void model\+::\+Game\+::rotate\+Brick (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Méthode pour faire tourner la brique actuelle dans le sens horloger. 
+
+Cette méthode fait tourner la brique actuelle. Si la rotation amène la brique en dehors du tableau ou en collision avec une autre brique, elle est verrouillée dans sa position actuelle. \Hypertarget{classmodel_1_1_game_aa1a665282a1127d9c12eca21fceff1c8}\label{classmodel_1_1_game_aa1a665282a1127d9c12eca21fceff1c8} 
+\index{model::Game@{model::Game}!undoRotateBrick@{undoRotateBrick}}
+\index{undoRotateBrick@{undoRotateBrick}!model::Game@{model::Game}}
+\doxysubsubsection{\texorpdfstring{undoRotateBrick()}{undoRotateBrick()}}
+{\footnotesize\ttfamily void model\+::\+Game\+::undo\+Rotate\+Brick (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Méthode pour faire tourner la brique actuelle dans le sens anti horloger. 
+
+Cette méthode fait tourner la brique actuelle. Si la rotation amène la brique en dehors du tableau ou en collision avec une autre brique, elle est verrouollée dans sa position actuelle. \Hypertarget{classmodel_1_1_game_aca7dffaba120238ae57d09298398cc73}\label{classmodel_1_1_game_aca7dffaba120238ae57d09298398cc73} 
+\index{model::Game@{model::Game}!updateGame@{updateGame}}
+\index{updateGame@{updateGame}!model::Game@{model::Game}}
+\doxysubsubsection{\texorpdfstring{updateGame()}{updateGame()}}
+{\footnotesize\ttfamily bool model\+::\+Game\+::update\+Game (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Méthode pour mettre à jour le plateau de jeu. 
+
+Si la brique actuelle est nulle, elle génère une nouvelle brique et vérifie si elle peut être placée sur le plateau. Si elle ne peut pas, la méthode retourne faux. Sinon, elle retourne vrai.
+
+\begin{DoxyReturn}{Returns}
+Vrai si la mise à jour du tableau a réussi, sinon faux. 
+\end{DoxyReturn}
+\Hypertarget{classmodel_1_1_game_a06ad4f7b24379b0bfeffe3716e0565d8}\label{classmodel_1_1_game_a06ad4f7b24379b0bfeffe3716e0565d8} 
+\index{model::Game@{model::Game}!updateLevel@{updateLevel}}
+\index{updateLevel@{updateLevel}!model::Game@{model::Game}}
+\doxysubsubsection{\texorpdfstring{updateLevel()}{updateLevel()}}
+{\footnotesize\ttfamily void model\+::\+Game\+::update\+Level (\begin{DoxyParamCaption}\item[{int}]{max\+Level }\end{DoxyParamCaption})}
+
+
+
+Met à jour le niveau du jeu. 
+
+Cette méthode incrémente le niveau du jeu toutes les 10 lignes effacées. Le niveau maximal est spécifié par le paramètre max\+Level. Pour éviter que le niveau continue de monter lorsque le nombre de ligne effacé est un multiple de 10 et qu\textquotesingle{}on ne soit pas encore à 11, on remet line\+Cleared\+For\+Level à 0.
+
+
+\begin{DoxyParams}{Parameters}
+{\em max\+Level} & Le niveau maximal autorisé dans le jeu. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{classmodel_1_1_game_a8458d0a147ce32fc0b5071acf894f803}\label{classmodel_1_1_game_a8458d0a147ce32fc0b5071acf894f803} 
+\index{model::Game@{model::Game}!updateScore@{updateScore}}
+\index{updateScore@{updateScore}!model::Game@{model::Game}}
+\doxysubsubsection{\texorpdfstring{updateScore()}{updateScore()}}
+{\footnotesize\ttfamily void model\+::\+Game\+::update\+Score (\begin{DoxyParamCaption}\item[{int}]{Lines\+Cleared,  }\item[{int}]{drop\+Height }\end{DoxyParamCaption})}
+
+
+
+Méthode pour mettre à jour le score. 
+
+La méthode calcule les points gagnés en fonction du nombre de lignes effacées et de la distance parcourue par la brique vers le bas. Elle met également à jour le niveau si le nombre de lignes effacées est un multiple de 2.
+
+
+\begin{DoxyParams}{Parameters}
+{\em Lines\+Cleared} & Le nombre de lignes effacées. \\
+\hline
+{\em drop\+Height} & Le nombre de cases traversées lors du drop. \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+game.\+h\item 
+game.\+cpp\end{DoxyCompactItemize}

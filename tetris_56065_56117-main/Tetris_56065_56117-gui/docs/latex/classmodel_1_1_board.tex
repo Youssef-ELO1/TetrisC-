@@ -1,0 +1,401 @@
+\doxysection{model\+::Board Class Reference}
+\hypertarget{classmodel_1_1_board}{}\label{classmodel_1_1_board}\index{model::Board@{model::Board}}
+
+
+Classe représentant le plateau de jeu.  
+
+
+
+
+{\ttfamily \#include $<$Board.\+h$>$}
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classmodel_1_1_board_acd7355a51c90bbb5bce957abd718ad67}{Board}} ()
+\begin{DoxyCompactList}\small\item\em Constructeur par défaut de la classe \doxylink{classmodel_1_1_board}{Board}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classmodel_1_1_board_ae1007b98f10de33bdbdd51a312685d24}{Board}} (int row, int col)
+\begin{DoxyCompactList}\small\item\em Constructeur surchargé de la classe \doxylink{classmodel_1_1_board}{Board}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classmodel_1_1_board_ad53d4b63e2e4bb412e84837d33eebfd6}{initialise}} ()
+\begin{DoxyCompactList}\small\item\em Initialise le plateau de jeu. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classmodel_1_1_board_a6290e55741182e93d1a7a75f7ee37732}{is\+Cases\+Out}} (const \mbox{\hyperlink{classmodel_1_1position}{position}} \&pos)
+\begin{DoxyCompactList}\small\item\em Vérifie si une position donnée est en dehors des limites du tableau. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classmodel_1_1brick}{brick}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{classmodel_1_1_board_a17a6aa5b2835c0ba8c49005d3503ccf4}{get\+Random\+Brick}} () const
+\begin{DoxyCompactList}\small\item\em Obtient une brique aléatoire. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classmodel_1_1brick}{brick}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{classmodel_1_1_board_a075bde4f05ed556ff88e630ce88497d1}{get\+Current\+Brick}} () const
+\begin{DoxyCompactList}\small\item\em Obtient la brique actuelle. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classmodel_1_1_board_aa1a75c03d5e838c0c8152ba368952359}{set\+New\+Random\+Current\+Brick}} ()
+\begin{DoxyCompactList}\small\item\em Définit une nouvelle brique aléatoire comme brique actuelle. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classmodel_1_1_board_a2a42d936fdfc9410dc905cb4dd70833a}{set\+Locked\+Brick}} ()
+\begin{DoxyCompactList}\small\item\em Méthode pour marquer la brique actuelle comme verrouillée dans le tableau. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classmodel_1_1_board_aebcf8c8756d78140a03a0a4ecca6f56d}{is\+Cases\+Empty}} (const \mbox{\hyperlink{classmodel_1_1position}{position}} \&pos)
+\begin{DoxyCompactList}\small\item\em Vérifie si une position est vide sur le plateau de jeu. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classmodel_1_1_board_aa288e832f36dd8298d228fe9d3fa1772}{is\+Pos\+Brick\+Empty}} ()
+\begin{DoxyCompactList}\small\item\em Méthode pour vérifier si les positions de la brique actuelle sont vides sur le plateau de jeu. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classmodel_1_1_board_a57186abe5e76d8b5c315b45a39235312}{get\+Rows\+Num}} () const
+\begin{DoxyCompactList}\small\item\em Méthode pour obtenir le nombre de lignes du tableau. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classmodel_1_1_board_add94355703e2c42185e2af1178815b9e}{get\+Cols\+Num}} () const
+\begin{DoxyCompactList}\small\item\em Méthode pour obtenir le nombre de colonnes du tableau. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classmodel_1_1_board_aa142e05decb4634d5046307a2df6dd65}{get\+Board\+Value}} (int row, int column) const
+\begin{DoxyCompactList}\small\item\em Obtient la valeur contenue dans le tableau à une position donnée. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classmodel_1_1_board_a36d19c2165cf4ddcfc7ad0f122fa6010}{is\+Brick\+Out}} ()
+\begin{DoxyCompactList}\small\item\em Méthode pour vérifier si la brique actuelle est en dehors du plateau de jeu. \end{DoxyCompactList}\item 
+std\+::vector$<$ \mbox{\hyperlink{classmodel_1_1position}{position}} $>$ \mbox{\hyperlink{classmodel_1_1_board_aa8901691f8f19088177d1e1f94a76057}{get\+Current\+Brick\+Pos}} () const
+\begin{DoxyCompactList}\small\item\em Méthode pour obtenir les positions actuelles de la brique. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classmodel_1_1_board_a9f16abcf751142d39011a7084576135a}{is\+Brick\+Bottom}} ()
+\begin{DoxyCompactList}\small\item\em Méthode qui vérifie si la brique est tout en bas du plateau. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classmodel_1_1_board_a034e40ae0e9c48ebdd366eb5403ae14b}{is\+Posistion\+Inside\+Brick}} (int row, int col)
+\begin{DoxyCompactList}\small\item\em Méthode qui vérifie si la position est dans la brique actuelle. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classmodel_1_1_board_a5d413598e76e3a26f11e403d7de6a830}{clear\+Line}} (int row)
+\begin{DoxyCompactList}\small\item\em Méthode pour effacer une ligne du tableau. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classmodel_1_1_board_a0891b7f3cc792e001c026e525e10c2d6}{row\+Full}} (int row)
+\begin{DoxyCompactList}\small\item\em Méthode pour vérifier si une ligne du tableau est complète. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classmodel_1_1_board_a0f9f65807efea4c2c79ed8d58524664b}{move\+Down\+Line}} (int row, int rows\+Num)
+\begin{DoxyCompactList}\small\item\em Déplace une ligne vers le bas dans la grille du plateau de jeu. \end{DoxyCompactList}\item 
+\Hypertarget{classmodel_1_1_board_acdef937a58f82e116edfdca42a13a174}\label{classmodel_1_1_board_acdef937a58f82e116edfdca42a13a174} 
+void {\bfseries set\+Current\+Brick\+To\+Null} ()
+\item 
+\Hypertarget{classmodel_1_1_board_a3127ae48334019a24efb0a38ffb5a9c4}\label{classmodel_1_1_board_a3127ae48334019a24efb0a38ffb5a9c4} 
+std\+::vector$<$ std\+::vector$<$ int $>$ $>$ {\bfseries get\+Board} ()
+\item 
+\Hypertarget{classmodel_1_1_board_a157a233202050179624ea250d8c17d59}\label{classmodel_1_1_board_a157a233202050179624ea250d8c17d59} 
+void {\bfseries set\+Board} (const \mbox{\hyperlink{classmodel_1_1_board}{Board}} \&board)
+\item 
+\Hypertarget{classmodel_1_1_board_a114d06a5a4f85f0c59779ce3fca7b797}\label{classmodel_1_1_board_a114d06a5a4f85f0c59779ce3fca7b797} 
+void {\bfseries draw} (QPainter \&painter)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classmodel_1_1_board_a6ea08dccbf4d045375efa08ef18a4cd3}\label{classmodel_1_1_board_a6ea08dccbf4d045375efa08ef18a4cd3} 
+int {\bfseries rows\+Num}
+\item 
+\Hypertarget{classmodel_1_1_board_a45c601c7f42f08f089291cab7fc6e481}\label{classmodel_1_1_board_a45c601c7f42f08f089291cab7fc6e481} 
+int {\bfseries cols\+Num}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Classe représentant le plateau de jeu. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classmodel_1_1_board_acd7355a51c90bbb5bce957abd718ad67}\label{classmodel_1_1_board_acd7355a51c90bbb5bce957abd718ad67} 
+\index{model::Board@{model::Board}!Board@{Board}}
+\index{Board@{Board}!model::Board@{model::Board}}
+\doxysubsubsection{\texorpdfstring{Board()}{Board()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily model\+::\+Board\+::\+Board (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
+
+
+
+Constructeur par défaut de la classe \doxylink{classmodel_1_1_board}{Board}. 
+
+Initialise les membres de la classe, crée le tableau de jeu avec des dimensions par défaut, initialise le tableau avec des valeurs par défaut, obtient une nouvelle brique aléatoire, initialise le score et le niveau et le nombre de ligne effacé. \Hypertarget{classmodel_1_1_board_ae1007b98f10de33bdbdd51a312685d24}\label{classmodel_1_1_board_ae1007b98f10de33bdbdd51a312685d24} 
+\index{model::Board@{model::Board}!Board@{Board}}
+\index{Board@{Board}!model::Board@{model::Board}}
+\doxysubsubsection{\texorpdfstring{Board()}{Board()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily model\+::\+Board\+::\+Board (\begin{DoxyParamCaption}\item[{int}]{row,  }\item[{int}]{col }\end{DoxyParamCaption})}
+
+
+
+Constructeur surchargé de la classe \doxylink{classmodel_1_1_board}{Board}. 
+
+Initialise les membres de la classe avec les dimensions spécifiées, crée le tableau de jeu avec les dimensions données, initialise le tableau avec des valeurs par défaut, obtient une nouvelle brique aléatoire, initialise le score et le niveau et le nombre de ligne effacé.
+
+
+\begin{DoxyParams}{Parameters}
+{\em row} & Le nombre de lignes du tableau. \\
+\hline
+{\em col} & Le nombre de colonnes du tableau. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classmodel_1_1_board_a5d413598e76e3a26f11e403d7de6a830}\label{classmodel_1_1_board_a5d413598e76e3a26f11e403d7de6a830} 
+\index{model::Board@{model::Board}!clearLine@{clearLine}}
+\index{clearLine@{clearLine}!model::Board@{model::Board}}
+\doxysubsubsection{\texorpdfstring{clearLine()}{clearLine()}}
+{\footnotesize\ttfamily void model\+::\+Board\+::clear\+Line (\begin{DoxyParamCaption}\item[{int}]{row }\end{DoxyParamCaption})}
+
+
+
+Méthode pour effacer une ligne du tableau. 
+
+Parcourt la ligne spécifiée et remplace toutes les valeurs par 0, ce qui équivaut à effacer la ligne.
+
+
+\begin{DoxyParams}{Parameters}
+{\em row} & L\textquotesingle{}indice de la ligne à effacer. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{classmodel_1_1_board_aa142e05decb4634d5046307a2df6dd65}\label{classmodel_1_1_board_aa142e05decb4634d5046307a2df6dd65} 
+\index{model::Board@{model::Board}!getBoardValue@{getBoardValue}}
+\index{getBoardValue@{getBoardValue}!model::Board@{model::Board}}
+\doxysubsubsection{\texorpdfstring{getBoardValue()}{getBoardValue()}}
+{\footnotesize\ttfamily int model\+::\+Board\+::get\+Board\+Value (\begin{DoxyParamCaption}\item[{int}]{row,  }\item[{int}]{column }\end{DoxyParamCaption}) const}
+
+
+
+Obtient la valeur contenue dans le tableau à une position donnée. 
+
+Cette méthode retourne la valeur contenue dans le tableau à la position spécifiée par la ligne et la colonne.
+
+
+\begin{DoxyParams}{Parameters}
+{\em row} & L\textquotesingle{}indice de la ligne dans le tableau. \\
+\hline
+{\em column} & L\textquotesingle{}indice de la colonne dans le tableau. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+La valeur contenue dans le tableau à la position spécifiée. 
+\end{DoxyReturn}
+\Hypertarget{classmodel_1_1_board_add94355703e2c42185e2af1178815b9e}\label{classmodel_1_1_board_add94355703e2c42185e2af1178815b9e} 
+\index{model::Board@{model::Board}!getColsNum@{getColsNum}}
+\index{getColsNum@{getColsNum}!model::Board@{model::Board}}
+\doxysubsubsection{\texorpdfstring{getColsNum()}{getColsNum()}}
+{\footnotesize\ttfamily int model\+::\+Board\+::get\+Cols\+Num (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Méthode pour obtenir le nombre de colonnes du tableau. 
+
+\begin{DoxyReturn}{Returns}
+Le nombre de colonnes du tableau. 
+\end{DoxyReturn}
+\Hypertarget{classmodel_1_1_board_a075bde4f05ed556ff88e630ce88497d1}\label{classmodel_1_1_board_a075bde4f05ed556ff88e630ce88497d1} 
+\index{model::Board@{model::Board}!getCurrentBrick@{getCurrentBrick}}
+\index{getCurrentBrick@{getCurrentBrick}!model::Board@{model::Board}}
+\doxysubsubsection{\texorpdfstring{getCurrentBrick()}{getCurrentBrick()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classmodel_1_1brick}{brick}} \texorpdfstring{$\ast$}{*} model\+::\+Board\+::get\+Current\+Brick (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Obtient la brique actuelle. 
+
+Cette méthode retourne la brique actuelle en jeu.
+
+\begin{DoxyReturn}{Returns}
+Un pointeur vers la brique actuelle. 
+\end{DoxyReturn}
+\Hypertarget{classmodel_1_1_board_aa8901691f8f19088177d1e1f94a76057}\label{classmodel_1_1_board_aa8901691f8f19088177d1e1f94a76057} 
+\index{model::Board@{model::Board}!getCurrentBrickPos@{getCurrentBrickPos}}
+\index{getCurrentBrickPos@{getCurrentBrickPos}!model::Board@{model::Board}}
+\doxysubsubsection{\texorpdfstring{getCurrentBrickPos()}{getCurrentBrickPos()}}
+{\footnotesize\ttfamily vector$<$ \mbox{\hyperlink{classmodel_1_1position}{position}} $>$ model\+::\+Board\+::get\+Current\+Brick\+Pos (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Méthode pour obtenir les positions actuelles de la brique. 
+
+\begin{DoxyReturn}{Returns}
+Un vecteur contenant les positions actuelles de la brique. 
+\end{DoxyReturn}
+\Hypertarget{classmodel_1_1_board_a17a6aa5b2835c0ba8c49005d3503ccf4}\label{classmodel_1_1_board_a17a6aa5b2835c0ba8c49005d3503ccf4} 
+\index{model::Board@{model::Board}!getRandomBrick@{getRandomBrick}}
+\index{getRandomBrick@{getRandomBrick}!model::Board@{model::Board}}
+\doxysubsubsection{\texorpdfstring{getRandomBrick()}{getRandomBrick()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classmodel_1_1brick}{brick}} \texorpdfstring{$\ast$}{*} model\+::\+Board\+::get\+Random\+Brick (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Obtient une brique aléatoire. 
+
+Cette méthode retourne une brique aléatoire à partir de la classe Brick\+Factory.
+
+\begin{DoxyReturn}{Returns}
+Un pointeur vers la brique aléatoire créée. 
+\end{DoxyReturn}
+\Hypertarget{classmodel_1_1_board_a57186abe5e76d8b5c315b45a39235312}\label{classmodel_1_1_board_a57186abe5e76d8b5c315b45a39235312} 
+\index{model::Board@{model::Board}!getRowsNum@{getRowsNum}}
+\index{getRowsNum@{getRowsNum}!model::Board@{model::Board}}
+\doxysubsubsection{\texorpdfstring{getRowsNum()}{getRowsNum()}}
+{\footnotesize\ttfamily int model\+::\+Board\+::get\+Rows\+Num (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Méthode pour obtenir le nombre de lignes du tableau. 
+
+\begin{DoxyReturn}{Returns}
+Le nombre de lignes du tableau. 
+\end{DoxyReturn}
+\Hypertarget{classmodel_1_1_board_ad53d4b63e2e4bb412e84837d33eebfd6}\label{classmodel_1_1_board_ad53d4b63e2e4bb412e84837d33eebfd6} 
+\index{model::Board@{model::Board}!initialise@{initialise}}
+\index{initialise@{initialise}!model::Board@{model::Board}}
+\doxysubsubsection{\texorpdfstring{initialise()}{initialise()}}
+{\footnotesize\ttfamily void model\+::\+Board\+::initialise (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Initialise le plateau de jeu. 
+
+Cette méthode initialise le plateau de jeu avec les dimensions spécifiées. Chaque élément du tableau est initialisé à zéro. \Hypertarget{classmodel_1_1_board_a9f16abcf751142d39011a7084576135a}\label{classmodel_1_1_board_a9f16abcf751142d39011a7084576135a} 
+\index{model::Board@{model::Board}!isBrickBottom@{isBrickBottom}}
+\index{isBrickBottom@{isBrickBottom}!model::Board@{model::Board}}
+\doxysubsubsection{\texorpdfstring{isBrickBottom()}{isBrickBottom()}}
+{\footnotesize\ttfamily bool model\+::\+Board\+::is\+Brick\+Bottom (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Méthode qui vérifie si la brique est tout en bas du plateau. 
+
+Cette méthode parcourt les positions de la brique actuelle pour vérifier si l\textquotesingle{}une des positions se situe tout en bas du plateau ou si une position adjacente à la brique est déjà occupée. Si l\textquotesingle{}une de ces conditions est remplie, la méthode renvoie vrai, sinon elle renvoie faux.
+
+\begin{DoxyReturn}{Returns}
+true si la brique est tout en bas du plateau, sinon false. 
+\end{DoxyReturn}
+\Hypertarget{classmodel_1_1_board_a36d19c2165cf4ddcfc7ad0f122fa6010}\label{classmodel_1_1_board_a36d19c2165cf4ddcfc7ad0f122fa6010} 
+\index{model::Board@{model::Board}!isBrickOut@{isBrickOut}}
+\index{isBrickOut@{isBrickOut}!model::Board@{model::Board}}
+\doxysubsubsection{\texorpdfstring{isBrickOut()}{isBrickOut()}}
+{\footnotesize\ttfamily bool model\+::\+Board\+::is\+Brick\+Out (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Méthode pour vérifier si la brique actuelle est en dehors du plateau de jeu. 
+
+\begin{DoxyReturn}{Returns}
+Vrai si la brique actuelle est en dehors du plateau de jeu, sinon faux. 
+\end{DoxyReturn}
+\Hypertarget{classmodel_1_1_board_aebcf8c8756d78140a03a0a4ecca6f56d}\label{classmodel_1_1_board_aebcf8c8756d78140a03a0a4ecca6f56d} 
+\index{model::Board@{model::Board}!isCasesEmpty@{isCasesEmpty}}
+\index{isCasesEmpty@{isCasesEmpty}!model::Board@{model::Board}}
+\doxysubsubsection{\texorpdfstring{isCasesEmpty()}{isCasesEmpty()}}
+{\footnotesize\ttfamily bool model\+::\+Board\+::is\+Cases\+Empty (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classmodel_1_1position}{position}} \&}]{pos }\end{DoxyParamCaption})}
+
+
+
+Vérifie si une position est vide sur le plateau de jeu. 
+
+Cette méthode vérifie si la case spécifiée par la position donnée est vide sur le plateau de jeu. Une case est considérée comme vide si sa valeur dans le tableau de jeu est égale à 0.
+
+
+\begin{DoxyParams}{Parameters}
+{\em pos} & La position à vérifier. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true si la case est vide, sinon false. 
+\end{DoxyReturn}
+\Hypertarget{classmodel_1_1_board_a6290e55741182e93d1a7a75f7ee37732}\label{classmodel_1_1_board_a6290e55741182e93d1a7a75f7ee37732} 
+\index{model::Board@{model::Board}!isCasesOut@{isCasesOut}}
+\index{isCasesOut@{isCasesOut}!model::Board@{model::Board}}
+\doxysubsubsection{\texorpdfstring{isCasesOut()}{isCasesOut()}}
+{\footnotesize\ttfamily bool model\+::\+Board\+::is\+Cases\+Out (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classmodel_1_1position}{position}} \&}]{pos }\end{DoxyParamCaption})}
+
+
+
+Vérifie si une position donnée est en dehors des limites du tableau. 
+
+Cette méthode vérifie si les coordonnées spécifiées sont en dehors des limites du tableau.
+
+
+\begin{DoxyParams}{Parameters}
+{\em pos} & La position à vérifier. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true si la position est en dehors des limites du tableau, sinon false. 
+\end{DoxyReturn}
+\Hypertarget{classmodel_1_1_board_aa288e832f36dd8298d228fe9d3fa1772}\label{classmodel_1_1_board_aa288e832f36dd8298d228fe9d3fa1772} 
+\index{model::Board@{model::Board}!isPosBrickEmpty@{isPosBrickEmpty}}
+\index{isPosBrickEmpty@{isPosBrickEmpty}!model::Board@{model::Board}}
+\doxysubsubsection{\texorpdfstring{isPosBrickEmpty()}{isPosBrickEmpty()}}
+{\footnotesize\ttfamily bool model\+::\+Board\+::is\+Pos\+Brick\+Empty (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Méthode pour vérifier si les positions de la brique actuelle sont vides sur le plateau de jeu. 
+
+Cette méthode vérifie si toutes les positions occupées par la brique actuelle sont vides dans le plateau de jeu.
+
+\begin{DoxyReturn}{Returns}
+Vrai si toutes les positions de la brique actuelle sont vides, sinon faux. 
+\end{DoxyReturn}
+\Hypertarget{classmodel_1_1_board_a034e40ae0e9c48ebdd366eb5403ae14b}\label{classmodel_1_1_board_a034e40ae0e9c48ebdd366eb5403ae14b} 
+\index{model::Board@{model::Board}!isPosistionInsideBrick@{isPosistionInsideBrick}}
+\index{isPosistionInsideBrick@{isPosistionInsideBrick}!model::Board@{model::Board}}
+\doxysubsubsection{\texorpdfstring{isPosistionInsideBrick()}{isPosistionInsideBrick()}}
+{\footnotesize\ttfamily bool model\+::\+Board\+::is\+Posistion\+Inside\+Brick (\begin{DoxyParamCaption}\item[{int}]{row,  }\item[{int}]{col }\end{DoxyParamCaption})}
+
+
+
+Méthode qui vérifie si la position est dans la brique actuelle. 
+
+Cette méthode parcourt les positions de la brique actuelle pour vérifier si la position spécifiée est l\textquotesingle{}une d\textquotesingle{}entre elles. Si c\textquotesingle{}est le cas, la méthode renvoie vrai, sinon elle renvoie faux.
+
+
+\begin{DoxyParams}{Parameters}
+{\em row} & La ligne de la position à vérifier. \\
+\hline
+{\em col} & La colonne de la position à vérifier. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true si la position est dans la brique actuelle, sinon false. 
+\end{DoxyReturn}
+\Hypertarget{classmodel_1_1_board_a0f9f65807efea4c2c79ed8d58524664b}\label{classmodel_1_1_board_a0f9f65807efea4c2c79ed8d58524664b} 
+\index{model::Board@{model::Board}!moveDownLine@{moveDownLine}}
+\index{moveDownLine@{moveDownLine}!model::Board@{model::Board}}
+\doxysubsubsection{\texorpdfstring{moveDownLine()}{moveDownLine()}}
+{\footnotesize\ttfamily void model\+::\+Board\+::move\+Down\+Line (\begin{DoxyParamCaption}\item[{int}]{row,  }\item[{int}]{rows\+Num }\end{DoxyParamCaption})}
+
+
+
+Déplace une ligne vers le bas dans la grille du plateau de jeu. 
+
+Cette méthode déplace une ligne vers le bas dans la grille du plateau de jeu, en copiant les valeurs des cases de la ligne spécifiée vers une ligne située plus bas. La ligne d\textquotesingle{}origine est ensuite effacée.
+
+
+\begin{DoxyParams}{Parameters}
+{\em row} & L\textquotesingle{}index de la ligne à déplacer vers le bas. \\
+\hline
+{\em rows\+Num} & Le nombre de lignes à déplacer vers le bas. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{classmodel_1_1_board_a0891b7f3cc792e001c026e525e10c2d6}\label{classmodel_1_1_board_a0891b7f3cc792e001c026e525e10c2d6} 
+\index{model::Board@{model::Board}!rowFull@{rowFull}}
+\index{rowFull@{rowFull}!model::Board@{model::Board}}
+\doxysubsubsection{\texorpdfstring{rowFull()}{rowFull()}}
+{\footnotesize\ttfamily bool model\+::\+Board\+::row\+Full (\begin{DoxyParamCaption}\item[{int}]{row }\end{DoxyParamCaption})}
+
+
+
+Méthode pour vérifier si une ligne du tableau est complète. 
+
+Parcourt la ligne spécifiée et vérifie si toutes les cases sont remplies.
+
+
+\begin{DoxyParams}{Parameters}
+{\em row} & L\textquotesingle{}indice de ligne à vérifier. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Vrai si la ligne est complète, sinon faux. 
+\end{DoxyReturn}
+\Hypertarget{classmodel_1_1_board_a2a42d936fdfc9410dc905cb4dd70833a}\label{classmodel_1_1_board_a2a42d936fdfc9410dc905cb4dd70833a} 
+\index{model::Board@{model::Board}!setLockedBrick@{setLockedBrick}}
+\index{setLockedBrick@{setLockedBrick}!model::Board@{model::Board}}
+\doxysubsubsection{\texorpdfstring{setLockedBrick()}{setLockedBrick()}}
+{\footnotesize\ttfamily void model\+::\+Board\+::set\+Locked\+Brick (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Méthode pour marquer la brique actuelle comme verrouillée dans le tableau. 
+
+Récupère les positions de la brique actuelle et met à jour le tableau en marquant les cases correspondantes comme verrouillées. Ensuite, elle appelle la méthode Clear\+All\+Lines() pour effacer les lignes complètes et mettre à jour le score. \Hypertarget{classmodel_1_1_board_aa1a75c03d5e838c0c8152ba368952359}\label{classmodel_1_1_board_aa1a75c03d5e838c0c8152ba368952359} 
+\index{model::Board@{model::Board}!setNewRandomCurrentBrick@{setNewRandomCurrentBrick}}
+\index{setNewRandomCurrentBrick@{setNewRandomCurrentBrick}!model::Board@{model::Board}}
+\doxysubsubsection{\texorpdfstring{setNewRandomCurrentBrick()}{setNewRandomCurrentBrick()}}
+{\footnotesize\ttfamily void model\+::\+Board\+::set\+New\+Random\+Current\+Brick (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Définit une nouvelle brique aléatoire comme brique actuelle. 
+
+Cette méthode génère une nouvelle brique aléatoire et la définit comme brique actuelle. 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Board.\+h\item 
+Board.\+cpp\end{DoxyCompactItemize}

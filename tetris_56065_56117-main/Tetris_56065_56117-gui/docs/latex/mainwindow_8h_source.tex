@@ -1,0 +1,63 @@
+\doxysection{mainwindow.\+h}
+\hypertarget{mainwindow_8h_source}{}\label{mainwindow_8h_source}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#ifndef\ MAINWINDOW\_H}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#define\ MAINWINDOW\_H}}
+\DoxyCodeLine{00003\ }
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ <QMainWindow>}}
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#include\ <QPushButton>}}
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#include\ <QLabel>}}
+\DoxyCodeLine{00007\ \textcolor{preprocessor}{\#include\ <QLayout>}}
+\DoxyCodeLine{00008\ \textcolor{preprocessor}{\#include\ <QTimer>}}
+\DoxyCodeLine{00009\ \textcolor{preprocessor}{\#include\ <vector>}}
+\DoxyCodeLine{00010\ \textcolor{preprocessor}{\#include\ "{}game.h"{}}}
+\DoxyCodeLine{00011\ \textcolor{preprocessor}{\#include\ <vector>}}
+\DoxyCodeLine{00012\ }
+\DoxyCodeLine{00013\ }
+\DoxyCodeLine{00014\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_main_window}{MainWindow}}\ :\ \textcolor{keyword}{public}\ QMainWindow\ \{}
+\DoxyCodeLine{00015\ \ \ \ \ Q\_OBJECT}
+\DoxyCodeLine{00016\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00017\ \ \ \ \ \textcolor{keyword}{explicit}\ \mbox{\hyperlink{class_main_window_a2813b5e812bb698777b2f9691dab4b50}{MainWindow}}(\mbox{\hyperlink{classmodel_1_1_game}{model::Game}}\ game,QWidget\ *parent=\textcolor{keyword}{nullptr});}
+\DoxyCodeLine{00018\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_main_window_a128f71880d4b9683149023fc46fcc9f8}{update}}();}
+\DoxyCodeLine{00019\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_main_window_a5edcbc314e782645cdf4db101eeb247d}{start}}();}
+\DoxyCodeLine{00020\ }
+\DoxyCodeLine{00021\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00022\ \ \ \ \ \textcolor{keywordtype}{void}\ setupUI();}
+\DoxyCodeLine{00023\ }
+\DoxyCodeLine{00024\ \ \ \ \ \textcolor{keywordtype}{void}\ updateCellColor();}
+\DoxyCodeLine{00025\ }
+\DoxyCodeLine{00026\ }
+\DoxyCodeLine{00027\ \ \ \ \ QFrame***\ cells;\textcolor{comment}{//\ Ici\ c'est\ un\ pointeur\ vers\ un\ pointeur\ vers\ un\ pointeur\ pour\ alloué\ un\ tableau\ a\ 2d.}}
+\DoxyCodeLine{00028\ \ \ \ \ QPushButton\ *exitButton;}
+\DoxyCodeLine{00029\ \ \ \ \ QPushButton\ *startButton;}
+\DoxyCodeLine{00030\ \ \ \ \ QPushButton\ *pauseButton;}
+\DoxyCodeLine{00031\ \ \ \ \ QPushButton\ *Rigth;}
+\DoxyCodeLine{00032\ \ \ \ \ QLabel\ *scoreLabel;}
+\DoxyCodeLine{00033\ \ \ \ \ QLabel\ *levelLabel;}
+\DoxyCodeLine{00034\ \ \ \ \ QLabel\ *nextShapeLabel;}
+\DoxyCodeLine{00035\ \ \ \ \ QLabel\ *TimeLabel;}
+\DoxyCodeLine{00036\ \ \ \ \ QLabel*\ linesClearedLabel;}
+\DoxyCodeLine{00037\ \ \ \ \ QFrame\ *nextShapeFrame;}
+\DoxyCodeLine{00038\ \ \ \ \ \mbox{\hyperlink{classmodel_1_1_game}{model::Game}}\ game;}
+\DoxyCodeLine{00039\ }
+\DoxyCodeLine{00040\ \ \ \ \ QPushButton*\ createButton(\textcolor{keyword}{const}\ QString\ \&text,\ QLayout\ *layout);}
+\DoxyCodeLine{00041\ \ \ \ \ QLabel*\ createLabel(\textcolor{keyword}{const}\ QString\ \&text,\ QLayout\ *layout);}
+\DoxyCodeLine{00042\ \ \ \ \ QTimer\ *timer\ =\ \textcolor{keyword}{new}\ QTimer();}
+\DoxyCodeLine{00043\ \ \ \ \ QTimer\ *chrono;}
+\DoxyCodeLine{00044\ \ \ \ \ \textcolor{keywordtype}{int}\ TimeSeconds\ =\ 0;}
+\DoxyCodeLine{00045\ }
+\DoxyCodeLine{00046\ \textcolor{keyword}{private}\ slots:}
+\DoxyCodeLine{00047\ }
+\DoxyCodeLine{00048\ \ \ \ \ \textcolor{keywordtype}{void}\ connectButtons();}
+\DoxyCodeLine{00049\ \ \ \ \ \textcolor{keywordtype}{void}\ moveLeft();}
+\DoxyCodeLine{00050\ \ \ \ \ \textcolor{keywordtype}{void}\ moveRight();}
+\DoxyCodeLine{00051\ \ \ \ \ \textcolor{keywordtype}{void}\ moveDown();}
+\DoxyCodeLine{00052\ \ \ \ \ \textcolor{keywordtype}{void}\ rotateClockwise();}
+\DoxyCodeLine{00053\ \ \ \ \ \textcolor{keywordtype}{void}\ rotateAntiClockwise();}
+\DoxyCodeLine{00054\ \ \ \ \ \textcolor{keywordtype}{void}\ moveDrop();}
+\DoxyCodeLine{00055\ \ \ \ \ \textcolor{keywordtype}{void}\ updateChrono();}
+\DoxyCodeLine{00056\ \};}
+\DoxyCodeLine{00057\ }
+\DoxyCodeLine{00058\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ MAINWINDOW\_H}}
+
+\end{DoxyCode}
